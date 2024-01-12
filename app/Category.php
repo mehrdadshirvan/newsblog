@@ -1,0 +1,24 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Category extends Model
+{
+    protected $table = 'category';
+    protected $fillable = [
+        'id',
+        'user_id',
+        'name',
+        'name_url',
+        'ename_url',
+        'parent_id',
+        'link_to',
+        'sort',
+        'del',
+    ];
+    protected $hidden = [
+        'created_at', 'updated_at',
+    ];
+}
